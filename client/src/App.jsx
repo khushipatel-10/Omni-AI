@@ -1,11 +1,15 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Home from './pages/home'
+import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import Community from './pages/Community'
 import Layout from './pages/Layout'
 import BlogTitles from './pages/BlogTitles'
 import WriteArticle from './pages/WriteArticle'
+import GenerateImage from './pages/GenImages'
+import RemoveBg from './pages/RemoveBg'
+import RemoveObj from './pages/RemoveObj'
+import ReviewResume from './pages/ReviewResume'
 
 const App = () => {
   return (
@@ -20,7 +24,7 @@ const App = () => {
           <Route path="remove-background" element={<RemoveBg />} />
           <Route path="remove-object" element={<RemoveObj />} />
           <Route path="review-resume" element={<ReviewResume />} />
-          <Route path="/community" element={<Community />} />
+          <Route path="community" element={<Community />} />
         </Route>
       </Routes>
     </div >
